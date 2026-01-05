@@ -1,0 +1,3 @@
+X = read($HDF5_FILE, format="hdf5", dataset=$DATASET_NAME)
+dummy = nrow(X) + ncol(X)
+write(dummy, $OUTPUT_FILE, format="text")

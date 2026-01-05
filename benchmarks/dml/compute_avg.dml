@@ -1,0 +1,3 @@
+X = read($HDF5_FILE, format="hdf5", dataset=$DATASET_NAME)
+avg = mean(X)
+write(avg, $OUTPUT_FILE, format="text")
