@@ -18,6 +18,7 @@ I have attempted to make the other two implementations do the same thing.
 ## Results
 
 I used the validation hdf5 file from the So2Sat LCZ42 dataset which contains 3 datasets: `sen1`, `sen2`, and `label`.
+The systemds checkout used was https://github.com/luccadibe/systemds/tree/hdf5-reader . 
 
 Sytemds with read throughput with the proposed changes is 26% faster than  h5py and 32% faster than the  java binding for big datasets. [`results/plot_mb_s.png`](results/plot_mb_s.png):
 
